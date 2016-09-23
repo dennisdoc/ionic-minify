@@ -1,0 +1,29 @@
+<ion-view view-title="Consulta">
+	<ion-nav-title >
+	    <h1 class="title">Consulta</h1>
+	    <div class="buttons">
+	        <button class="button button-icon ion-android-search" ng-click="categoriesCtrl.showFilterBar()" ></button>
+		</div>      
+	</ion-nav-title>
+	<ion-pane>
+		<ion-tabs class="tabs-energized">
+			<ion-tab title="Serviços">
+				<ion-pane>
+					<ion-content class="has-header">
+						<ion-list>
+							<div vs-repeat class="row row-no-padding row-app list-item" >
+								<ion-item ng-repeat="category in categoriesCtrl.categories | orderBy:'descricao' track by $index" 
+								class="col col-33 background-primary">
+									<div class="item-icon-app">
+										<img ng-src="{{category.img}}" title="Shopping Cart" width="24">
+										<h3>{{category.descricao}}</h3>
+									</div>
+								</ion-item>
+							</div>
+						</ion-list>
+					</ion-content>
+				</ion-pane>
+			</ion-tab>
+		</ion-tabs>
+	</ion-pane>
+</ion-view>

@@ -1,0 +1,125 @@
+{
+	"totalRows": 8,
+	"rows": [
+			  {
+			    "descricao": "Compras",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 1
+			  },
+			  {
+			    "descricao": "Acessórios",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 2
+			  },
+			  {
+			    "descricao": "Antenas",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/GPS Searching-50.png",
+                "id": 3
+			  },
+			  {
+			    "descricao": "Aquecedores",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Heating Automation-48.png",
+                "id": 4
+			  },
+			  {
+			    "descricao": "Compras",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 1
+			  },
+			  {
+			    "descricao": "Acessórios",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 2
+			  },
+			  {
+			    "descricao": "Antenas",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/GPS Searching-50.png",
+                "id": 3
+			  },
+			  {
+			    "descricao": "Aquecedores",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Heating Automation-48.png",
+                "id": 4
+			  },
+			  {
+			    "descricao": "Compras",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 1
+			  },
+			  {
+			    "descricao": "Acessórios",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 2
+			  },
+			  {
+			    "descricao": "Antenas",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/GPS Searching-50.png",
+                "id": 3
+			  },
+			  {
+			    "descricao": "Aquecedores",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Heating Automation-48.png",
+                "id": 4
+			  },
+			  {
+			    "descricao": "Compras",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 1
+			  },
+			  {
+			    "descricao": "Acessórios",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 2
+			  },
+			  {
+			    "descricao": "Antenas",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/GPS Searching-50.png",
+                "id": 3
+			  },
+			  {
+			    "descricao": "Aquecedores",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Heating Automation-48.png",
+                "id": 4
+			  },
+			  {
+			    "descricao": "Compras",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 1
+			  },
+			  {
+			    "descricao": "Acessórios",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Shopping Cart-48.png",
+                "id": 2
+			  },
+			  {
+			    "descricao": "Antenas",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/GPS Searching-50.png",
+                "id": 3
+			  },
+			  {
+			    "descricao": "Aquecedores",
+			    "icon": "ion-ios-grid-view-outline",
+                "img" : "./images/Heating Automation-48.png",
+                "id": 4
+			  }
+	]
+}

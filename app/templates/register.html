@@ -1,0 +1,43 @@
+<ion-view view-title="Register" hide-nav-bar="true" class="full-page-bckg">
+	<ion-content has-bouncing="false">
+		<form name="forms.registerForm" class="invision-form">
+			<div class="list list-inset form-group">
+				<div class="item logo-big">
+					<h1 style="margin-bottom:15px;" >Criar Usuario</h1>
+				</div>
+				<label class="item item-input form-group" ng-class="{error: forms.registerForm.usuario.$invalid && forms.registerForm.$dirty}" >
+					<i class="icon ion-person placeholder-icon"></i>
+					<input form-validation required="true" type="text" ng-model="usuario.usuario" placeholder="Usuario*" name="usuario" >
+				</label>
+				<label class="item item-input" ng-class="{error: forms.registerForm.nomeCompleto.$invalid && forms.registerForm.$dirty}" >
+					<i class="icon ion-person placeholder-icon"></i>
+					<input form-validation required="true" type="text" ng-model="usuario.nomeCompleto" placeholder="Nome Completo*" name="nomeCompleto">
+				</label>
+
+				<selectone ng-required="true" selecionado="'Select Campo'" list="lista.select" model="usuario.select" icon="'ion-home'" >
+				</selectone>
+
+				
+				<label class="item item-input" ng-class="{error: forms.registerForm.confirmaSenha.$invalid && forms.registerForm.$dirty}" >
+					<i class="icon ion-lock-combination placeholder-icon"></i>
+					<input required="true" type="password" ng-model="confirmacaoSenha" placeholder="Confirma Senha*" name="confirmaSenha" >
+				</label>
+				<ion-process-spinner css-class="button button-block button-primary spinner-calm spinner-button" spinner="crescent" processing="loginCtrl.isProcessing">
+					<label class="item form-button">
+						<button class="button button-block button-light" ng-click="loginCtrl.register()" >
+							Registrar
+						</button>
+					</label>
+				</ion-process-spinner>
+				<div class="row form-links">
+					<div class="col">
+						<a class="col col-100" data-ui-sref="app.login">
+							Ja possue conta?
+						</a>
+					</div>
+					<div class="col col-100 center-align"><a data-ui-sref="app.terms">Terms & Conditions</a></div>
+				</div>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

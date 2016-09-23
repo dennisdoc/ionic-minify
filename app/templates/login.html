@@ -1,0 +1,31 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="full-page-bckg">
+	<ion-content scroll="true" has-bouncing="true">
+		<form name="forms.loginForm" class="invision-form">
+			<div class="list list-inset">
+				<div class="item logo-big">
+					<img src="images/icon.png" alt="logo" />
+				</div>
+				<label class="item item-input form-group" ng-class="{error: forms.loginForm.usuario.$invalid && forms.loginForm.$dirty}" >
+					<i class="icon ion-person placeholder-icon"></i>
+					<input form-validation required type="text" ng-model="usuario.usuario" placeholder="Login" name="usuario" >
+				</label>
+				<label class="item item-input form-group" ng-class="{error: forms.loginForm.senha.$invalid && forms.loginForm.$dirty}" >
+					<i class="icon ion-lock-combination placeholder-icon"></i>
+					<input form-validation required type="password" ng-model="usuario.senha" placeholder="Senha" name="senha" >
+				</label>
+				<ion-process-spinner css-class="button button-block button-primary spinner-calm spinner-button" spinner="crescent" processing="loginCtrl.isProcessing">
+					<label class="item form-button">
+						<button class="button button-block button-primary" ng-click="loginCtrl.doLogin(true)" >Log in</button>
+					</label>
+				</ion-process-spinner>
+				<div class="row form-links">
+					<div class="col">
+						<a class="col col-100" data-ui-sref="app.register">Criar conta
+						</a>
+					</div>
+					<div class="col col-100 right-align"><a data-ui-sref="app.help">Need Help?</a></div>
+				</div>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

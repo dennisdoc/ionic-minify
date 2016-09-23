@@ -1,0 +1,47 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-positive">
+			<ion-nav-back-button></ion-nav-back-button>
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left" data-ng-if="appCtrl.showMenu"></button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+	<ion-side-menu side="left" class="full-page-bckg-menu">
+		<ion-content>
+			<ion-list>
+				<ion-item ng-if="logado" menu-close data-ui-sref="app.categories">
+					<i class="icon ion-search placeholder-icon"></i>
+					Categorias
+				</ion-item>
+				<ion-item ng-if="logado" menu-close data-ui-sref="app.login">
+					<i class="icon ion-ios-person-outline placeholder-icon"></i>
+					Login
+				</ion-item>
+				<ion-item ng-if="logado" menu-close data-ui-sref="app.register">
+					<i class="icon ion-ios-personadd-outline placeholder-icon"></i>
+					Registrar
+				</ion-item>
+				<ion-item ng-if="logado" menu-close data-ng-click="appCtrl.openModal()" class="item-complex">
+					<a class="item-content">
+						<i class="icon ion-ios-albums-outline placeholder-icon"></i>
+						Modal Window
+					</a>
+				</ion-item>
+				<ion-item menu-close data-ui-sref="app.terms">
+					<i class="icon ion-ios-list-outline placeholder-icon"></i>
+					Termos de Uso
+				</ion-item>
+				<ion-item menu-close data-ui-sref="app.help">
+					<i class="icon ion-ios-help-outline placeholder-icon"></i>
+					Ajuda
+				</ion-item>
+				<ion-item menu-close data-ui-sref="app.slideshow({forceShow: true})">
+					<i class="icon ion-ios-barcode-outline placeholder-icon"></i>
+					Tutorial
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
