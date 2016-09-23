@@ -2,49 +2,45 @@
  * Categories controller
  */
 (function() {
-angular
-	.module('app')
+	'use strict';
+angular.module('app').controller('CategoriesController',CategoriesController);
 
-	.controller('CategoriesController', [
-		'$scope',
-		'categoriesService',
-		'$ionicFilterBar',
-		'$state',
-		function ($scope,categoriesSvc,$ionicFilterBar,$state) {
-			'use strict';
+	CategoriesController.$inject=['$scope','categoriesService','$ionicFilterBar','$state'];
 
-			var vm = this;
-			vm.items=[];
+	function CategoriesController($scope,categoriesSvc,$ionicFilterBar,$state) {
+		'use strict';
 
-			vm.showFilterBar =showFilterBar;
+		var vm = this;
+		vm.items=[];
 
-			$scope.$on('$ionicView.afterEnter',afterEnter);
+		vm.showFilterBar =showFilterBar;
 
-			$scope.getNumber = getNumber;
+		$scope.$on('$ionicView.afterEnter',afterEnter);
 
-			function getNumber(num) {
-			    return new Array(num);   
-			}
+		$scope.getNumber = getNumber;
 
-			function afterEnter(){
-				categoriesSvc.getCategories().then(setCategories);
-			};
-
-			function setCategories(categories) {
-				vm.categories = categories;
-			}
-
-			function showFilterBar() {
-		      var filterBarInstance = $ionicFilterBar.show({
-		        items: vm.categories,
-		        update: function (filteredItems) {
-		          vm.categories = filteredItems;
-		        },
-		        filterProperties: 'descricao'
-		      });
-		    };
-
+		function getNumber(num) {
+		    return new Array(num);   
 		}
-	]);
+
+		function afterEnter(){
+			categoriesSvc.getCategories().then(setCategories);
+		};
+
+		function setCategories(categories) {
+			vm.categories = categories;
+		}
+
+		function showFilterBar() {
+	      var filterBarInstance = $ionicFilterBar.show({
+	        items: vm.categories,
+	        update: function (filteredItems) {
+	          vm.categories = filteredItems;
+	        },
+	        filterProperties: 'descricao'
+	      });
+	    };
+
+	};
 
 })();

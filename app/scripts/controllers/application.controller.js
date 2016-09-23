@@ -2,14 +2,11 @@
  * Application controller
  */
 (function() {
-angular
-	.module('app')
+angular.module('app').controller('ApplicationController',ApplicationController); 
 
-	.controller('ApplicationController', [
-		'$scope',
-		'$ionicModal',
-		'$state',
-		function ($scope, $ionicModal, $state) {
+	ApplicationController.$inject=['$scope','$ionicModal','$state'];
+
+	function ApplicationController($scope, $ionicModal, $state) {
 			'use strict';
 
 			var vm = this;
@@ -46,7 +43,6 @@ angular
 				$scope.modal.hide();
 			}
 
-		}
-	]);
+		};
 
 })();

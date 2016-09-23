@@ -24,13 +24,8 @@ angular.module('app', ['ionic', 'ngCordova','ngStorage',
 				$cordovaStatusbar.styleHex('#244367');
 			}
 
-			window.localStorage.setItem('showIntro', true);
+			window.localStorage.setItem('', true);
 
-			var notificationOpenedCallback = function() {};
-			// Update with your OneSignal AppId and googleProjectNumber before running.
-			if (window.plugins && window.plugins.OneSignal) {
-				window.plugins.OneSignal.init('bff790de-6c7b-4550-9202-0acebb924b28', {googleProjectNumber: '295165547597'}, notificationOpenedCallback);
-			}
 		});
 	}
 ])
