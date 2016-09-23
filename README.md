@@ -33,6 +33,16 @@ isntalação ionic(linux) - >
    sudo npm install -g -y gulp
    sudo npm install -g -y grunt
    ```
+   baixar https://developer.android.com/studio/index.html#downloads
+   
+   extrair e criar variavel de ambiente
+   
+   (ubuntu .bashrc)
+   
+   export ANDROID_SDK=/CAMINHOSDK/android-sdk/
+   executar $ANDROID_SDK/tools/android
+   
+   e instalar dependencias do android a ser utilizado 
 
 comandos grunt de minificacao- > 
 
