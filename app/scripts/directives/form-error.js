@@ -1,19 +1,19 @@
 (function() {
-angular
-  	.module('app')
-  	.directive('form-validation', function() {
-	    return {
+	'use strict';
+angular.module('app').directive('form-validation',formValidation);
+
+  	function formValidation() {
+  		'use strict';
+	    var directive= {
 	        restrict: 'A',
 	        require: 'ngModel', // require the ngModel controller so you can plug into validation
-			link: function (scope, element, attrs, ctrl) 
-			{
-	            //ctrl will be the ngModel instance
-	            
+			link: link 
+	    };
+
+	    function link(scope, element, attrs, ctrl){            
 	            function validate(value) {
-	                // validate the value here, return true or false
 	                return value == 'test' || value == null;
 	            }
-	            // validate when value is going from DOM to model
 	            ctrl.$parsers.unshift(function(value) {
 	                var valid = validate(value);
 	                
@@ -22,13 +22,16 @@ angular
 	                return valid ? value : undefined;
 	            });
 	            
-	            // validate when value is going from model to DOM
 	            ctrl.$formatters.unshift(function(value) {
 	                
 	                ctrl.$setValidity('form-validation', validate(value));
 	                return value;
 	            });
 	        }
+
 	    };
-  	});
+
+	    return directive;
+  	};
+
 })();

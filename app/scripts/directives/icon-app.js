@@ -1,19 +1,24 @@
 (function() {
-angular
-  .module('app')
-  .directive('iconapp', function() {
-    return {
+  'use strict';
+angular.module('app').directive('iconapp',iconapp);
+
+  function iconapp() {
+    'use strict';
+    var directive= {
       restrict:'EA',
       scope:{
         icon:'='
       },
       replace:true,
-      controller:function($scope){
-        
-
-      },
+      controller:controller,
       templateUrl: './templates/directives/icon-app.html'
     };
-  });
+
+    function controller($scope){
+
+    };
+
+    return directive;
+  };
 
 })();
