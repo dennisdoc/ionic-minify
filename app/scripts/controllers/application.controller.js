@@ -16,13 +16,13 @@ angular.module('app').controller('ApplicationController',ApplicationController);
 			vm.closeModal = closeModal;
 
 			$scope.$on('hideMenu',hideMenu);
-			$scope.$on('$stateChangeStart',$stateChangeStart);
+			$scope.$on('$stateChangeStart',stateChangeStart);
 			
 			function hideMenu() {
 				vm.showMenu = false;
 			};
 
-			function $stateChangeStart() {
+			function stateChangeStart() {
 				vm.showMenu = true;
 			};
 
