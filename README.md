@@ -2,6 +2,18 @@
 
 Aplicativo simples com login,registro e lista de servicos.
 
+rodar projeto ->
+
+git clone https://github.com/dennisdoc/ionic-minify.git
+
+npm install --save
+
+bower install --save
+
+grunt platform:add:<platform>
+
+grunt run:<platform> --device
+
 Desenvolvimento e Dependencias ->
 
 isntalação ionic(linux) - >
