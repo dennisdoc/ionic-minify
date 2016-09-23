@@ -1,0 +1,19 @@
+{
+  "name": "IonicMinify",
+  "version": "0.1.0",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.3.1"
+  },
+  "dependencies": {
+    "angularLocalStorage": "ngStorage#^0.3.2",
+    "ngstorage": "ng-storage#^0.4.2",
+    "tabbedSlideBox": "https://github.com/saravmajestic/ionic/tree/master/tabbedSlideBox",
+    "ionic": "^1.3.1",
+    "ionic-rating": "^0.3.0",
+    "ionic-filter-bar": "^1.1.1",
+    "angular-resource": "^1.5.8",
+    "angular-vs-repeat": "^1.1.7",
+    "ionic-timepicker": "^0.6.0",
+    "ngCordovaMocks": "ng-cordova-mocks#^0.7.0"
+  }
+}
