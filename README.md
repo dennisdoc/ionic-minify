@@ -3,7 +3,7 @@
 Desenvolvimento e Dependencias ->
 
 isntalação ionic(linux) - >
-
+```python
    sudo apt-get install default-jdk
    sudo apt-get install git
    sudo apt-get install nodejs
@@ -18,6 +18,7 @@ isntalação ionic(linux) - >
    sudo npm install -g -y cordova
    sudo npm install -g -y gulp
    sudo npm install -g -y grunt
+   ```
 
 comandos grunt de minificacao- > 
 
