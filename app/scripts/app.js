@@ -1,5 +1,5 @@
 /**
- * SurfIT app
+ * app.js
  */
 angular.module('app', ['ionic', 'ngCordova','ngStorage',
 	'ionic.rating','jett.ionic.filter.bar','ngResource','ionic-native-transitions',

@@ -2,27 +2,24 @@
  * Categories service
  */
 (function() {
+	'use strict';
+angular.module('app').service('categoriesService',categoriesService); 
 
-angular
-	.module('app')
+	categoriesService.$inject=['$http','routesConfig'];
+		
+	function categoriesService($http, routesConfig) {
+		'use strict';
 
-	.service('categoriesService', [
-		'$http',
-		'routesConfig',
-		function ($http, routesConfig) {
-			'use strict';
+		function _getCategories() {
+			return $http.get(routesConfig.categories.all())
+				.then(function(response) {
+					return response.data.rows;
+				});
+		};
 
-			function _getCategories() {
-				return $http.get(routesConfig.categories.all())
-					.then(function(response) {
-						return response.data.rows;
-					});
-			}
-
-			return {
-				getCategories: _getCategories
-			};
-		}
-	]);
+		return {
+			getCategories: _getCategories
+		};
+	};
 
 })();
