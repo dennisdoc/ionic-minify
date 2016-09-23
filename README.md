@@ -1,5 +1,7 @@
 # ionic-minify
 
+Aplicativo simples com login,registro e lista de servicos.
+
 Desenvolvimento e Dependencias ->
 
 isntalação ionic(linux) - >
