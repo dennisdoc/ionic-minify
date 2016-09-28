@@ -53,6 +53,7 @@
     "org.apache.cordova.device",
     "org.apache.cordova.console",
     "com.ionic.keyboard",
-    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git"
+    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "cordova-plugin-whitelist"
   ]
 }
