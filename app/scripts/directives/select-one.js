@@ -18,6 +18,8 @@ angular.module('app').directive('selectone',selectone);
       templateUrl: './templates/directives/select-one.html'
     };
 
+    controller.$inject=['$scope','$ionicPopover'];
+
     function controller($scope,$ionicPopover){
 
       var template = '<ion-popover-view><ion-content style="padding:25px;" >'+
