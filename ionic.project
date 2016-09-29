@@ -1,18 +1,4 @@
 {
-  "name": "condoFix",
-  "app_id": "",
-  "proxies": [
-    {
-      "path": "/login/novo",
-      "proxyUrl": "http://localhost:3000/"
-    }
-  ],
-  "gulpStartupTasks": [
-    "sass",
-    "watch"
-  ],
-  "watchPatterns": [
-    "www/**/*",
-    "!www/lib/**/*"
-  ]
+  "name": "ionic-minify",
+  "app_id": ""
 }

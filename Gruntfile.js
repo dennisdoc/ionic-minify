@@ -224,6 +224,7 @@ module.exports = function (grunt) {
             '<%= yeoman.images %>/**/*.{png,jpg,jpeg,gif,webp,svg}',
             '*.html',
             'templates/**/*.html',
+            'templates/**/*/.html',
             'fonts/*',
             'feeds/*',
             'styles/*'
