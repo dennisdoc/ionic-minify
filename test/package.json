@@ -1,10 +1,8 @@
 {
-  "name": "IonicMinify",
+  "name": "Teste",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "ionic-native-transitions": "^1.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.5",
     "glob": "~4.3.5",
@@ -52,10 +50,8 @@
     "test": "grunt test"
   },
   "cordovaPlugins": [
-    "cordova-plugin-device",
-    "cordova-plugin-console",
-    "ionic-plugin-keyboard",
-    "cordova-plugin-x-toast",
-    "cordova-plugin-whitelist"
+		"org.apache.cordova.device",
+		"org.apache.cordova.console",
+		"com.ionic.keyboard"
   ]
 }

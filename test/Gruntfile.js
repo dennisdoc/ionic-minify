@@ -1,4 +1,4 @@
-// Generated on 2016-09-23 using generator-ionic 0.8.0
+// Generated on 2016-09-29 using generator-ionic 0.8.0
 'use strict';
 
 var _ = require('lodash');
@@ -224,9 +224,7 @@ module.exports = function (grunt) {
             '<%= yeoman.images %>/**/*.{png,jpg,jpeg,gif,webp,svg}',
             '*.html',
             'templates/**/*.html',
-            'fonts/*',
-            'feeds/*',
-            'styles/*'
+            'fonts/*'
           ]
         }, {
           expand: true,

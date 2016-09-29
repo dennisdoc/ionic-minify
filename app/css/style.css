@@ -1,0 +1,155 @@
+.form-group span{
+  color:white;
+}
+.invision-form .list-inset .item-input{
+  border: none;
+}
+.icon-app img{
+  width: 40px;
+  margin-left: 30%;
+  margin-top:5px;
+}
+.mapa-items{
+  overflow-y:scroll;
+}
+.spinner-button{
+  text-align:center;
+  padding-top: 8px;
+  margin-bottom: 0px !important;
+}
+.spinner-button svg{
+  display:block;
+  margin:auto;
+  width: 30px;
+  height: 30px;
+}
+.item-input.error{
+  border:1px red solid !important;
+}
+.rating{
+  display: inline-block;
+  font-size: 19px;
+}
+.rating li {
+  display:inline-block;
+}
+.input{
+  color: #fff;
+  padding-left: 20px;
+  font-weight: normal;
+  padding-right: 44px;
+  padding-top:2px;
+  padding-bottom:1px;
+}
+.pointer{
+  cursor:pointer;
+}
+.item-icon-app{
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    border: none !important;
+}
+.item-icon-app span{
+    padding: 5px;
+    font-size: 55px;
+    margin-top:5px !important;
+    /*border-radius: 63px;
+    width: 63px;
+    border: 1px grey solid;*/
+    
+    color: white;
+}
+
+.item-icon-app img {
+  padding: 5px;
+  width: 55px;
+  margin-top: 5px !important;
+  color: white;
+}
+
+.item-icon-app h3{
+	font-weight: bold;
+	color:white !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  width:100%;
+  text-align: center !important;
+}
+
+.icon-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon-app {
+  display: block;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), 0 2px 0px rgba(255,255,255,0.4) inset, 0 -2px 0px rgba(0,0,0,0.5) inset;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.icon-app:before {
+  display: block;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 5em;
+  font-family: "Ionicons";
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.icon-app:hover {
+  transform: translate(0,-0.5em);
+}
+
+.icon-app p{
+  text-align: center;
+  color: white;
+}
+
+.gradient-green {
+  background: linear-gradient(rgb(72, 216, 97), rgb(2, 161, 32));
+}
+
+/*.social-apple:after {
+  content: "";
+}*/
+
+.social-skype {
+  background: linear-gradient(rgb(0, 183, 255), rgb(0, 111, 245));
+}
+
+.social-skype:after {
+  content: "";
+  /*margin-bottom: 10px;
+  margin-left: 3px;*/
+}
+
+.social-whatsapp {
+  background: linear-gradient(rgb(254, 58, 47), rgb(221, 6, 4));
+}
+
+.social-whatsapp:after {
+  content: "";
+  /*margin-bottom: 15px;*/
+}
+
+.social-hackernews {
+  background: linear-gradient(rgb(255, 202, 0), rgb(235, 121, 0));
+}
+
+.social-hackernews:after {
+  content: ""; 
+  /*margin-bottom: 5px;
+  margin-left: -4px;*/
+}
