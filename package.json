@@ -50,10 +50,10 @@
     "test": "grunt test"
   },
   "cordovaPlugins": [
-    "org.apache.cordova.device",
-    "org.apache.cordova.console",
-    "com.ionic.keyboard",
-    "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
+    "cordova-plugin-device",
+    "cordova-plugin-console",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-x-toast",
     "cordova-plugin-whitelist"
   ]
 }
