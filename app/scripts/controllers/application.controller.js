@@ -28,15 +28,21 @@ angular.module('app').controller('ApplicationController',ApplicationController);
 
 			function showModal(modal) {
 				$scope.modal = modal;
-				// Open the intro modal
-				$scope.modal.show();
+				openModal($scope.modal);
+			};
+
+			function openModal(modal){
+				modal.show();
 			};
 
 			function openModal() {
-				// Create the intro modal that we will use later
-				$ionicModal.fromTemplateUrl('templates/modal.html', {
-					scope: $scope
-				}).then(showModal);
+				if($scope.modal==undefined){
+					$ionicModal.fromTemplateUrl('templates/modal.html', {
+						scope: $scope
+					}).then(showModal);
+				}else{
+					openModal($scope.modal);
+				}
 			};
 
 			function closeModal() {
